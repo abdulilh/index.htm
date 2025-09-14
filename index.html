@@ -1,9 +1,860 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>مكتب بن مسيحلان للسفريات والسياحة | الحج والعمرة | تأشيرات وتذاكر طيران</title>
+    <meta name="description" content="مكتب بن مسيحلان للسفريات والسياحة - خدمات الحج والعمرة، تأشيرات، تذاكر طيران، حجوزات فنادق. خبرة 15 عام في خدمات السفر. صنعاء - اليمن">
+    <meta name="keywords" content="مكتب بن مسيحلان, سفريات, سياحة, حج, عمرة, تأشيرات, تذاكر طيران, فنادق, صنعاء, اليمن, السعودية, الصين, الهند">
+    <meta name="author" content="مكتب بن مسيحلان للسفريات والسياحة">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Arabic">
+    <meta name="geo.region" content="YE">
+    <meta name="geo.placename" content="صنعاء">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="مكتب بن مسيحلان للسفريات والسياحة">
+    <meta property="og:description" content="خدمات الحج والعمرة، تأشيرات، تذاكر طيران. خبرة 15 عام في خدمات السفر والسياحة">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://binmosyhlan-travel.com">
+    <meta property="og:site_name" content="مكتب بن مسيحلان للسفريات">
+    <meta property="og:locale" content="ar_YE">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مكتب بن مسيحلان للسفريات والسياحة">
+    <meta name="twitter:description" content="خدمات الحج والعمرة، تأشيرات، تذاكر طيران بأفضل الأسعار">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://binmosyhlan-travel.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TravelAgency",
+        "name": "مكتب بن مسيحلان للسفريات والسياحة",
+        "description": "مكتب متخصص في خدمات السفر والسياحة والحج والعمرة",
+        "url": "https://binmosyhlan-travel.com",
+        "telephone": "+967777000584",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "الأصبحي، أمام بنك الكريمي، بن جابر للصرافة الدور الثاني",
+            "addressLocality": "صنعاء",
+            "addressCountry": "YE"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "15.3694",
+            "longitude": "44.1910"
+        },
+        "openingHours": [
+            "Sa-Th 09:00-21:00",
+            "Fr 16:00-21:00"
+        ],
+        "priceRange": "$$",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "اليمن"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "خدمات السفر والسياحة",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "خدمات الحج والعمرة"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "تأشيرات السفر"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "تذاكر الطيران"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-</body>
+    <!-- Header -->
+    <header class="gradient-bg text-white py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold">مكتب بن مسيحلان للسفريات والسياحة</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6 space-x-reverse">
+                    <li><a href="#services" class="hover:text-blue-200 transition" aria-label="خدماتنا">خدماتنا</a></li>
+                    <li><a href="#about" class="hover:text-blue-200 transition" aria-label="من نحن">من نحن</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition" aria-label="اتصل بنا">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-2xl" aria-label="فتح القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 px-6 bg-cover bg-center" style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1440 320\"><path fill=\"%231e3a8a\" fill-opacity=\"0.1\" d=\"M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,149.3C672,149,768,171,864,165.3C960,160,1056,128,1152,117.3C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z\"></path></svg>')">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-blue-900">لا تؤجل شوقك… عمرتك تبدأ الآن</h2>
+            <p class="text-xl md:text-2xl mb-10 text-gray-700 max-w-3xl mx-auto">مع مكتب بن مسيحلان للسفريات وخدمات الحج والعمرة - راحتك معنا تبدأ من أول خطوة وحتى وصولك إلى الحرم الشريف</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://wa.me/967777000584?text=مرحباً، أريد حجز رحلة" target="_blank" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg text-center" aria-label="احجز رحلتك الآن عبر واتساب">
+                    احجز الآن
+                </a>
+                <a href="https://wa.me/967777000584?text=مرحباً، أريد استشارة مجانية" target="_blank" class="bg-white hover:bg-gray-100 text-blue-800 font-bold py-3 px-8 rounded-lg transition border-2 border-blue-800 shadow-lg text-center" aria-label="احصل على استشارة مجانية">
+                    استشارة مجانية
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="py-16 px-6 bg-gradient-to-r from-green-600 to-green-700 text-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">🔥 عروض خاصة 🔥</h2>
+                <p class="text-xl opacity-90">استفد من عروضنا المميزة الآن</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Umrah Offer -->
+                <article class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
+                    <div class="text-center mb-4">
+                        <div class="text-4xl mb-2">🕋</div>
+                        <h3 class="text-xl font-bold">تأشيرة العمرة</h3>
+                    </div>
+                    <p class="text-center opacity-90 mb-4">متوفرة الآن بسهولة وسرعة</p>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>✅ إنجاز سريع</li>
+                        <li>✅ خدمة متكاملة</li>
+                        <li>✅ أسعار منافسة</li>
+                    </ul>
+                </article>
+                
+                <!-- Saudi Visit -->
+                <article class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
+                    <div class="text-center mb-4">
+                        <div class="text-4xl mb-2">🇸🇦</div>
+                        <h3 class="text-xl font-bold">زيارة السعودية</h3>
+                    </div>
+                    <p class="text-center opacity-90 mb-4">زور أحبابك بخطوات سهلة وسريعة</p>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>✅ جواز سفر ساري</li>
+                        <li>✅ صورتين شخصية</li>
+                        <li>✅ إثبات صلة القرابة</li>
+                    </ul>
+                </article>
+                
+                <!-- Work Visa -->
+                <article class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20">
+                    <div class="text-center mb-4">
+                        <div class="text-4xl mb-2">✈️</div>
+                        <h3 class="text-xl font-bold">فيزة حرة + إقامة</h3>
+                    </div>
+                    <p class="text-center opacity-90 mb-4">انطلق نحو مستقبلك في السعودية</p>
+                    <ul class="space-y-2 text-sm opacity-90">
+                        <li>✅ إقامة 3 شهور</li>
+                        <li>✅ فرصة للعمل</li>
+                        <li>✅ خطط صح وتوكل على الله</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">خدماتنا</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نقدم مجموعة متكاملة من خدمات السفر والسياحة لتلبية جميع احتياجاتكم</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <article class="service-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto service-icon">
+                            <i class="fas fa-plane text-3xl text-blue-800" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3 text-blue-900">تذاكر طيران</h3>
+                        <p class="text-gray-600 text-center">تذاكر طيران داخلية ودولية بأفضل الأسعار مع إمكانية الحجز المبكر والعروض الخاصة</p>
+                    </div>
+                </article>
+                
+                <!-- Service 2 -->
+                <article class="service-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto service-icon">
+                            <i class="fas fa-passport text-3xl text-blue-800" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3 text-blue-900">تأشيرات</h3>
+                        <p class="text-gray-600 text-center">تأشيرات زيارة، عمل، سياحة وعلاج لجميع دول العالم مع خدمة متابعة كاملة</p>
+                    </div>
+                </article>
+                
+                <!-- Service 3 -->
+                <article class="service-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto service-icon">
+                            <i class="fas fa-kaaba text-3xl text-blue-800" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3 text-blue-900">الحج والعمرة</h3>
+                        <p class="text-gray-600 text-center">باقات حج وعمرة متكاملة تشمل السكن والمواصلات والإرشاد الديني</p>
+                    </div>
+                </article>
+                
+                <!-- Service 4 -->
+                <article class="service-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto service-icon">
+                            <i class="fas fa-id-card text-3xl text-blue-800" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3 text-blue-900">معاملات الجوازات</h3>
+                        <p class="text-gray-600 text-center">إنجاز معاملات الجوازات بحضوركم أو بدون حضور مع ضمان السرعة والدقة</p>
+                    </div>
+                </article>
+                
+                <!-- Service 5 -->
+                <article class="service-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto service-icon">
+                            <i class="fas fa-bus-alt text-3xl text-blue-800" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3 text-blue-900">نقل بري</h3>
+                        <p class="text-gray-600 text-center">خدمات نقل بري محلي وخارجي بأحدث وسائل النقل وأعلى معايير الراحة والأمان</p>
+                    </div>
+                </article>
+                
+                <!-- Service 6 -->
+                <article class="service-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto service-icon">
+                            <i class="fas fa-hotel text-3xl text-blue-800" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3 text-blue-900">حجوزات فنادق</h3>
+                        <p class="text-gray-600 text-center">حجوزات فندقية في أفضل الفنادق العالمية بأسعار تنافسية وخدمات متميزة</p>
+                    </div>
+                </article>
+                
+                <!-- Service 7 -->
+                <article class="service-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6 mx-auto service-icon">
+                            <i class="fas fa-comments text-3xl text-blue-800" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-3 text-blue-900">استشارات سفر</h3>
+                        <p class="text-gray-600 text-center">استشارات سفر مجانية من خبراء متخصصين لمساعدتكم في تخطيط رحلاتكم</p>
+                    </div>
+                </article>
+                
+                <!-- Call to Action Card -->
+                <article class="service-card bg-gradient-to-r from-blue-800 to-blue-600 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6 flex flex-col items-center justify-center h-full">
+                        <h3 class="text-xl font-bold text-center mb-4 text-white">هل تحتاج إلى مساعدة؟</h3>
+                        <p class="text-blue-100 text-center mb-6">فريقنا جاهز للرد على استفساراتكم وتقديم أفضل الخدمات</p>
+                        <a href="https://wa.me/967777000584?text=مرحباً، أحتاج مساعدة" target="_blank" class="bg-white hover:bg-gray-100 text-blue-800 font-bold py-2 px-6 rounded-lg transition text-center block" aria-label="تواصل معنا عبر واتساب">
+                            تواصل معنا
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Airlines Section -->
+    <section class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">🚀 احجز رحلتك الآن</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">مع أفضل شركات الطيران العالمية</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Airlines -->
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">🇸🇦</div>
+                    <h3 class="font-bold text-blue-900">طيران السعودية</h3>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">🇶🇦</div>
+                    <h3 class="font-bold text-blue-900">طيران القطرية</h3>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">🇦🇪</div>
+                    <h3 class="font-bold text-blue-900">طيران الإمارات</h3>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">🇪🇬</div>
+                    <h3 class="font-bold text-blue-900">مصر للطيران</h3>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">🇹🇷</div>
+                    <h3 class="font-bold text-blue-900">طيران التركية</h3>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">🇾🇪</div>
+                    <h3 class="font-bold text-blue-900">طيران اليمنية</h3>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">🌐</div>
+                    <h3 class="font-bold text-blue-900">طيران الخليج</h3>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg transition">
+                    <div class="text-3xl mb-3">✈️</div>
+                    <h3 class="font-bold text-blue-900">وغيرها الكثير</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Services -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">خدمات متخصصة</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نقدم خدمات متخصصة لدول مختارة بعناية</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- China Visa -->
+                <article class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-xl shadow-md border border-red-200">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl mb-3">🇨🇳</div>
+                        <h3 class="text-xl font-bold text-red-800">دعوات رسمية للصين</h3>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-red-700">
+                            <i class="fas fa-clock text-red-600 ml-2" aria-hidden="true"></i>
+                            <span>الإنجاز خلال ساعة واحدة فقط</span>
+                        </div>
+                        <div class="flex items-center text-red-700">
+                            <i class="fas fa-check-circle text-red-600 ml-2" aria-hidden="true"></i>
+                            <span>بخطوات سهلة وسريعة</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-bold text-red-800 mb-2">المطلوب فقط:</h4>
+                        <ul class="space-y-1 text-sm text-red-700">
+                            <li>📌 صورة الجواز</li>
+                            <li>📌 صورة شخصية</li>
+                            <li>📌 العنوان</li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <!-- India Medical Visa -->
+                <article class="bg-gradient-to-br from-orange-50 to-orange-100 p-8 rounded-xl shadow-md border border-orange-200">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl mb-3">🇮🇳</div>
+                        <h3 class="text-xl font-bold text-orange-800">فيزا الهند للعلاج</h3>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-orange-700">
+                            <i class="fas fa-user-md text-orange-600 ml-2" aria-hidden="true"></i>
+                            <span>للعلاج الطبي</span>
+                        </div>
+                        <div class="flex items-center text-orange-700">
+                            <i class="fas fa-users text-orange-600 ml-2" aria-hidden="true"></i>
+                            <span>للمريض والمرافق</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-bold text-orange-800 mb-2">المطلوب:</h4>
+                        <ul class="space-y-1 text-sm text-orange-700">
+                            <li>🛂 صورة الجواز</li>
+                            <li>🖼️ صورة شخصية</li>
+                            <li>🧑‍⚕️ تقرير طبي + فحوصات</li>
+                            <li>👨‍👩‍👦 صلة القرابة</li>
+                            <li>🏙️ اسم المدينة للعلاج</li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <!-- Work & Visit Visa -->
+                <article class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-md border border-green-200">
+                    <div class="text-center mb-6">
+                        <div class="text-4xl mb-3">💼</div>
+                        <h3 class="text-xl font-bold text-green-800">فيز العمل والزيارة</h3>
+                    </div>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-green-700">
+                            <i class="fas fa-briefcase text-green-600 ml-2" aria-hidden="true"></i>
+                            <span>خبرة واسعة في التخليص</span>
+                        </div>
+                        <div class="flex items-center text-green-700">
+                            <i class="fas fa-bolt text-green-600 ml-2" aria-hidden="true"></i>
+                            <span>سرعة وإنجاز في أقل وقت</span>
+                        </div>
+                        <div class="flex items-center text-green-700">
+                            <i class="fas fa-target text-green-600 ml-2" aria-hidden="true"></i>
+                            <span>دقة واحترافية في التعامل</span>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg text-center">
+                        <p class="text-green-800 font-bold">بكل احترافية وبدون تعقيد</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">لماذا تختارنا؟</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نسعى دائماً لتقديم أفضل الخدمات وتجربة سفر لا تُنسى لعملائنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <article class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-check-circle text-2xl text-blue-800" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">خبرة طويلة</h3>
+                    <p class="text-gray-600">أكثر من 15 عاماً من الخبرة في مجال السفر والسياحة وخدمة آلاف العملاء</p>
+                </article>
+                
+                <!-- Feature 2 -->
+                <article class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-holding-usd text-2xl text-blue-800" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">أسعار تنافسية</h3>
+                    <p class="text-gray-600">نقدم أفضل الأسعار التنافسية مع ضمان الجودة العالية في جميع خدماتنا</p>
+                </article>
+                
+                <!-- Feature 3 -->
+                <article class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-2xl text-blue-800" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">دعم على مدار الساعة</h3>
+                    <p class="text-gray-600">فريق خدمة عملاء متاح 24/7 للرد على استفساراتكم وتقديم المساعدة الفورية</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">آراء عملائنا</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">نفتخر بثقة عملائنا وآرائهم الإيجابية عن خدماتنا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <article class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4" aria-label="تقييم 5 نجوم">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"تجربة رائعة مع مكتب بن مسيحلان للسفر والسياحة. خدمة ممتازة وسرعة في الإنجاز وأسعار منافسة. أنصح الجميع بالتعامل معهم."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-200 flex items-center justify-center">
+                            <span class="text-blue-800 font-bold">م.أ</span>
+                        </div>
+                        <div class="mr-4">
+                            <h4 class="font-bold text-blue-900">محمد أحمد</h4>
+                            <p class="text-gray-500 text-sm">الرياض</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Testimonial 2 -->
+                <article class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4" aria-label="تقييم 5 نجوم">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"استفدت من خدمات الحج والعمرة وكانت تجربة لا تُنسى. الترتيبات كانت مثالية والإرشاد كان ممتاز. شكراً لكم."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-200 flex items-center justify-center">
+                            <span class="text-blue-800 font-bold">س.ع</span>
+                        </div>
+                        <div class="mr-4">
+                            <h4 class="font-bold text-blue-900">سارة عبدالله</h4>
+                            <p class="text-gray-500 text-sm">جدة</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Testimonial 3 -->
+                <article class="bg-gray-50 p-8 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4" aria-label="تقييم 4.5 نجوم">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"استخرجت تأشيرة سياحية بكل سهولة ويسر. الإجراءات كانت سريعة والتكلفة معقولة. سأتعامل معهم مرة أخرى بالتأكيد."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-blue-200 flex items-center justify-center">
+                            <span class="text-blue-800 font-bold">خ.م</span>
+                        </div>
+                        <div class="mr-4">
+                            <h4 class="font-bold text-blue-900">خالد محمد</h4>
+                            <p class="text-gray-500 text-sm">الدمام</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 gradient-bg text-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">تواصل معنا</h2>
+                <p class="max-w-2xl mx-auto opacity-90">نحن هنا للإجابة على جميع استفساراتكم وتقديم المساعدة التي تحتاجونها</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Contact Info -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm">
+                        <h3 class="text-2xl font-bold mb-6">معلومات الاتصال</h3>
+                        
+                        <address class="not-italic">
+                            <div class="flex items-start mb-6">
+                                <div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mt-1">
+                                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="mr-4">
+                                    <h4 class="font-bold mb-1">العنوان</h4>
+                                    <p class="opacity-90">صنعاء – الأصبحي، أمام بنك الكريمي، بن جابر للصرافة الدور الثاني</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start mb-6">
+                                <div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mt-1">
+                                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                </div>
+                                <div class="mr-4">
+                                    <h4 class="font-bold mb-1">للتواصل</h4>
+                                    <p class="opacity-90"><a href="tel:+967777000584" class="hover:underline">777000584</a></p>
+                                    <p class="opacity-90"><a href="tel:+967777000854" class="hover:underline">777000854</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start mb-6">
+                                <div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mt-1">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                </div>
+                                <div class="mr-4">
+                                    <h4 class="font-bold mb-1">واتساب</h4>
+                                    <p class="opacity-90">777000584 - 777000854</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center mt-1">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                </div>
+                                <div class="mr-4">
+                                    <h4 class="font-bold mb-1">ساعات العمل</h4>
+                                    <p class="opacity-90">السبت - الخميس: 9:00 ص - 9:00 م</p>
+                                    <p class="opacity-90">الجمعة: 4:00 م - 9:00 م</p>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-900">ارسل رسالة</h3>
+                        
+                        <form id="contactForm">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 mb-2">الاسم *</label>
+                                    <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800" placeholder="أدخل اسمك">
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2">البريد الإلكتروني *</label>
+                                    <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800" placeholder="أدخل بريدك الإلكتروني">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="subject" class="block text-gray-700 mb-2">الموضوع *</label>
+                                <input type="text" id="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800" placeholder="أدخل موضوع الرسالة">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">الرسالة *</label>
+                                <textarea id="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800" placeholder="اكتب رسالتك هنا..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-8 rounded-lg transition shadow-lg w-full">
+                                إرسال الرسالة
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">مكتب بن مسيحلان للسفريات</h3>
+                    <p class="text-gray-400 mb-4">شريككم الموثوق في رحلات السفر والسياحة وخدمات الحج والعمرة</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-800 transition" aria-label="فيسبوك">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition" aria-label="تويتر">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-red-600 transition" aria-label="انستغرام">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.me/967777000584" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-green-600 transition" aria-label="واتساب">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">خدماتنا</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">من نحن</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">اتصل بنا</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">الأسئلة الشائعة</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">خدماتنا</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">تذاكر طيران</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">تأشيرات</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">الحج والعمرة</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">حجوزات فنادق</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">نقل بري</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">النشرة الإخبارية</h3>
+                    <p class="text-gray-400 mb-4">اشترك في نشرتنا الإخبارية للحصول على أحدث العروض والأخبار</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="بريدك الإلكتروني" class="px-4 py-2 rounded-r-lg w-full focus:outline-none text-gray-800" aria-label="البريد الإلكتروني للنشرة">
+                            <button type="submit" class="bg-blue-800 hover:bg-blue-900 px-4 py-2 rounded-l-lg transition" aria-label="اشتراك في النشرة">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2023 مكتب بن مسيحلان للسفريات والسياحة وخدمات الحج والعمرة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('block');
+        });
+        
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Validate form
+            if (!name || !email || !subject || !message) {
+                alert('يرجى ملء جميع الحقول المطلوبة');
+                return;
+            }
+            
+            // Create email body
+            const emailBody = `الاسم: ${name}%0D%0Aالبريد الإلكتروني: ${email}%0D%0Aالموضوع: ${subject}%0D%0Aالرسالة: ${message}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:abdulilhmosyhlan@gmail.com?subject=رسالة من موقع مكتب بن مسيحلان - ${subject}&body=${emailBody}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('تم فتح برنامج البريد الإلكتروني. يرجى إرسال الرسالة من هناك.');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // SEO and Performance optimizations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lazy loading for images (if any are added later)
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+            }
+
+            // Add structured data for local business
+            const localBusinessData = {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "مكتب بن مسيحلان للسفريات والسياحة",
+                "image": "https://binmosyhlan-travel.com/logo.png",
+                "telephone": "+967777000584",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "الأصبحي، أمام بنك الكريمي، بن جابر للصرافة الدور الثاني",
+                    "addressLocality": "صنعاء",
+                    "addressCountry": "YE"
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+                        "opens": "09:00",
+                        "closes": "21:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Friday",
+                        "opens": "16:00",
+                        "closes": "21:00"
+                    }
+                ]
+            };
+        });
+    </script>
+
+    <!-- Google Analytics (Replace with your tracking ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script> -->
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97f2a57e1497169b',t:'MTc1Nzg4MTg3MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
